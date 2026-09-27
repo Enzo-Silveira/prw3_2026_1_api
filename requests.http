@@ -1,0 +1,79 @@
+###
+GET http://localhost:8080/medicos
+Accept: application/json
+
+###
+GET http://localhost:8080/medicos/algunsdados
+Accept: application/json
+
+###
+GET http://localhost:8080/medicos/algunsdados?size=2&page=1
+Accept: application/json
+
+###
+GET http://localhost:8080/medicos/algunsdados?sort=nome
+Accept: application/json
+
+###
+POST http://localhost:8080/medicos
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nome": "Lupita Zoroastro",
+  "email": "lupy@gmail.com",
+  "telefone": "16992487777",
+  "crm": "666666",
+  "especialidade": "DERMATOLOGIA",
+  "endereco": {
+    "logradouro": "Rua Danilo Micalli 50",
+    "bairro": "Sao Carlos 3",
+    "cep": "13563264",
+    "cidade": "São Carlos",
+    "uf": "SP",
+    "numero": "888",
+    "complemento": "casa 99"
+  }
+}
+
+###
+POST http://localhost:8080/medicos
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nome": "Asdrubal Zoroastro",
+  "email": "asd@gmail.com",
+  "crm": "777777",
+  "telefone": "17992483333",
+  "especialidade": "DERMATOLOGIA",
+  "endereco": {
+    "logradouro": "Rua Danilo Micalli 50",
+    "bairro": "Sao Carlos 3",
+    "cep": "13563264",
+    "cidade": "São Carlos",
+    "uf": "SP",
+    "numero": "999",
+    "complemento": "casa 74"
+  }
+}
+
+###
+POST http://localhost:8080/medicos
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nome": "Anita Garibaldi",
+  "email": "ag@gmail.com",
+  "telefone": "16992484444",
+  "crm": "444444",
+  "especialidade": "ORTOPEDIA",
+  "endereco": {
+    "logradouro": "RUA QUATRO",
+    "bairro": "BAIRRO QUATRO",
+    "cep": "44444444",
+    "cidade": "Limeira",
+    "uf": "SP"
+  }
+}
