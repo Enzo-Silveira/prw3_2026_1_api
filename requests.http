@@ -1,5 +1,26 @@
 ###
-GET http://localhost:8080/medicos
+PUT http://localhost:8080/medicos
+Content-Type: application/json
+
+{
+  "id": 3,
+  "endereco": {
+    "logradouro": "AAAA",
+    "bairro": "AAAA",
+    "cep": "999999",
+    "cidade": "AAAA",
+    "uf": "AA",
+    "numero": "999",
+    "complemento": "AAA"
+  }
+}
+
+###
+DELETE http://localhost:8080/medicos/3
+Accept: application/json
+
+###
+GET http://localhost:8080/medicos/10
 Accept: application/json
 
 ###
@@ -20,19 +41,19 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "nome": "Lupita Zoroastro",
-  "email": "lupy@gmail.com",
-  "telefone": "16992487777",
-  "crm": "666666",
-  "especialidade": "DERMATOLOGIA",
+  "nome": "Dilermando Reis",
+  "email": "dil@gmail.com",
+  "crm": "667777",
+  "especialidade": "ORTOPEDIA",
+  "telefone": "16992225599",
   "endereco": {
-    "logradouro": "Rua Danilo Micalli 50",
-    "bairro": "Sao Carlos 3",
-    "cep": "13563264",
+    "logradouro": "RUA DIL",
+    "bairro": "BAIRRO DIL",
+    "cep": "12345678",
     "cidade": "São Carlos",
     "uf": "SP",
-    "numero": "888",
-    "complemento": "casa 99"
+    "numero": "555",
+    "complemento": "DILDILDIL"
   }
 }
 
