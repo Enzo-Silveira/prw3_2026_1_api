@@ -16,11 +16,11 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:8080/medicos/3
+DELETE http://localhost:8080/medicos/300
 Accept: application/json
 
 ###
-GET http://localhost:8080/medicos/10
+GET http://localhost:8080/medicos/103
 Accept: application/json
 
 ###
@@ -54,6 +54,29 @@ Accept: application/json
     "uf": "SP",
     "numero": "555",
     "complemento": "DILDILDIL"
+  }
+}
+
+
+###
+POST http://localhost:8080/medicos
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nome": "Asdrubal Almeida",
+  "email": "asd@gmail.com",
+  "crm": "111111",
+  "telefone": "16992481111",
+  "especialidade": "ORTOPEDIA",
+  "endereco": {
+    "logradouro": "rua blabla",
+    "bairro": "santa felicia",
+    "cep": "13563264",
+    "cidade": "São Carlos",
+    "uf": "SP",
+    "numero": "50",
+    "complemento": "casa 99"
   }
 }
 

@@ -3,7 +3,6 @@ package br.edu.ifsp.prw3.prw3_2026_1_api.controller;
 import br.edu.ifsp.prw3.prw3_2026_1_api.medico.*;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,8 +13,14 @@ import java.util.Optional;
 @RestController
 @RequestMapping("medicos")
 public class MedicoController {
-    @Autowired
-    private MedicoRepository repository;
+    //@Autowired
+    //private MedicoRepository repository;
+
+    private final MedicoRepository repository;
+
+    public MedicoController(MedicoRepository repository) {
+        this.repository = repository;
+    }
 
     @PostMapping
     @Transactional
