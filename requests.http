@@ -31,8 +31,9 @@ DELETE http://localhost:8080/medicos/300
 Accept: application/json
 
 ###
-GET http://localhost:8080/medicos/103
+GET http://localhost:8080/medicos/3
 Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJESVNDSVBMSU5BIFBXMyIsInN1YiI6ImFzZHJ1YmFsQGdtYWlsLmNvbSIsImV4cCI6MTc5NDI1NDY4NX0.2WPegdwzi3jihhriZefuxMRJ41UMiZdpLUMVsCFPU5o
 
 ###
 GET http://localhost:8080/medicos/algunsdados
